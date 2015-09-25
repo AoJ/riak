@@ -3,4 +3,4 @@ set -e
 
 
 docker build -t aoj/riak .
-docker run --rm aoj/riak /tmp/install/test.sh
+docker run --rm --hostname `hostname`.devel.rocks aoj/riak /tmp/files/test.sh
