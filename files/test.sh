@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+export WAIT_FOR_ERLANG=30
+
 riak start
 riak ping
 sleep 30
